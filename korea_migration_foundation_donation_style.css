@@ -30,3 +30,32 @@ header h1 {
 hr {
     opacity: 0.5;
 }
+
+section {
+    width: 1000px;
+    margin: auto;
+    font-family: sans-serif;
+    margin-top: 60px;
+}
+
+section h1 {
+    margin-left: 30px;
+}
+
+form {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+}
+
+form h2 {
+    width: 100%;
+    font-size: 20px;
+}
+
+section input {
+    border-color: rgb(59, 180, 217);
+    border-style: solid;
+    height: 20px;
+    width: 200px;
+}
