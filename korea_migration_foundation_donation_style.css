@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 body {
     margin: 0px;
     padding-top: 20px;
@@ -64,42 +62,6 @@ input {
     border-style: solid;
     height: 40px;
     text-indent: 10px;
-}
-
-input[type=name] {
-    width: 100%;
-}
-
-input[type=phone_number1] {
-    width: 15%;
-    float: left;
-}
-
-input[type=phone_number2] {
-    width: 25%;
-    float: left;
-}
-
-input[type=phone_number3] {
-    width: 25%;
-    float: left;
-}
-
-input[type=resident_registration_number] {
-    width: 100%;
-}
-
-input[type=email_front] {
-    float: left;
-    width: 30%;
-}
-
-input[type=email_back] {
-    float: left;
-    width: 30%;
-}
-
-input[type=donation_amount] {
     width: 100%;
 }
 
@@ -113,7 +75,7 @@ form h3 {
 }
 
 button {
-    width: 1000px;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     height: 100px;
