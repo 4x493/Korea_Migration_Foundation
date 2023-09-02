@@ -59,7 +59,8 @@
             </div>
         </div>
 
-        <form action="https://formsubmit.co/KoreaMigrationFoundation@gmail.com" method="POST">
+        <!--<form action="https://formsubmit.co/KoreaMigrationFoundation@gmail.com" method="POST">-->
+        <form>
             <div id="form_title_container">
                 <div id="deco3"></div>
                 <h1 id="form_title">회원 정보</h1>
@@ -103,6 +104,7 @@
             <div class="form_block">
                 <h2>은행 (មោះធនាគារ)</h2>
                 <select name="bank" style="width: 100%;">
+                    <option value="none" selected disabled hidden>은행을 선택해주세요</option>
                     <option value="KEB하나은행">KEB하나은행</option>
                     <option value="SC제일은행">SC제일은행</option>
                     <option value="국민은행">국민은행</option>
@@ -111,16 +113,16 @@
                     <option value="우리은행">우리은행</option>
                     <option value="한국시티은행">한국시티은행</option>
                     <option value="경남은행">경남은행</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="광주은행">광주은행</option>
+                    <option value="대구은행">대구은행</option>
+                    <option value="부산은행">부산은행</option>
+                    <option value="전북은행">전북은행</option>
+                    <option value="제주은행">제주은행</option>
+                    <option value="기업은행">기업은행</option>
+                    <option value="농협">농협</option>
+                    <option value="수협">수협</option>
+                    <option value="한국산업은행">한국산업은행</option>
+                    <option value="한국수출입은행">한국수출입은행</option>
                 </select>
             </div>
 
@@ -135,11 +137,73 @@
             </div>
 
             <div class="form_block">
-                <h2>결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ) </h2>
+                <h2>결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ)</h2>
+                <select name="payment_date" style="width: 100%;">
+                    <option value="none" selected disabled hidden>날짜를 선택해주세요</option>
+                    <option value="1일">1일</option>
+                    <option value="2일">2일</option>
+                    <option value="3일">3일</option>
+                    <option value="4일">4일</option>
+                    <option value="5일">5일</option>
+                    <option value="6일">6일</option>
+                    <option value="7일">7일</option>
+                    <option value="8일">8일</option>
+                    <option value="9일">9일</option>
+                    <option value="10일">10일</option>
+                    <option value="11일">11일</option>
+                    <option value="12일">12일</option>
+                    <option value="13일">13일</option>
+                    <option value="14일">14일</option>
+                    <option value="15일">15일</option>
+                    <option value="16일">16일</option>
+                    <option value="17일">17일</option>
+                    <option value="18일">18일</option>
+                    <option value="19일">19일</option>
+                    <option value="20일">20일</option>
+                    <option value="21일">21일</option>
+                    <option value="22일">22일</option>
+                    <option value="23일">23일</option>
+                    <option value="24일">24일</option>
+                    <option value="25일">25일</option>
+                    <option value="26일">26일</option>
+                    <option value="27일">27일</option>
+                    <option value="28일">28일</option>
+                    <option value="29일">29일</option>
+                    <option value="30일">30일</option>
+                    <option value="31일">31일</option>
+                </select>
             </div>
 
             <div class="form_block">
                 <h2>결제금액 (ចំនួនទឹកប្រាក់នៃការទូទាត់)</h2>
+                <button style="width: calc(33% - 50px); margin-right: 71px;">2000원</button>
+                <button style="width: calc(34% - 50px); margin-right: 70px;">10,000원</button>
+                <button style="width: calc(33% - 50px);">50,000원</button>
+
+                <input name="결제금액" placeholder="기타 금액 (원)" style="width: calc(100% - 4px); margin-top: 20px; border-color: rgb(89, 232, 89);">
+            </div>
+
+            <div class="form_block">
+                <h2 style="margin-bottom: 0;">결제동의정보 (ត៌មានកិច្ចព្រមព្រៀងការទូទាត់)</h2>
+                <input type="checkbox" id="agreement1" name="결제동의정보1" value="결제동의정보1">
+                <label for="agreement1"> 개인정보수집 및 이용,제공,위탁 에 동의 / ការយល់ព្រមចំពោះការប្រមូលព័ត៌មានផ្ទាល់ខ្លួន ការប្រើប្រាស់ ការផ្តល់ ការដឹកជញ្ជូន។ល។</label>
+                <br>
+                <input type="checkbox" id="agreement2" name="결제동의정보2" value="결제동의정보2">
+                <label for="agreement2"> 신청내역을 확인 및 매월 자동 결제에 동의 / បញ្ជាក់ព័ត៌មានលម្អិតអំពីកម្មវិធី និងយល់ព្រមលើការទូទាត់ប្រចាំខែដោយស្វ័យប្រវត្តិ</label>
+                <br>
+            </div>
+
+            <div class="form_block">
+                <h2>전자서명 (ហត្ថលេខាអេឡិចត្រូនិច)</h2>
+                <div id="drawing_area_container">
+                    <div id="toolbar">
+                        <button id="clear">지우기</button>
+                    </div>
+                    <div class="drawing_board">
+                        <canvas id="drawing_board"></canvas>
+                    </div>
+                </div>
+                <p style="font-weight: bold;">한국이주노동재단의 전자동의(전자서명)서비스입니다.(전자금융거래법시행)</p>
             </div>
 
             <br>
@@ -149,6 +213,7 @@
 
             <div class="form_block">
                 <button id="submit_button" type="submit">신청하기</button>
+                <button id="reset_button" type="reset">다시 작성하기</button>
             </div>
         </form>
     </section>
