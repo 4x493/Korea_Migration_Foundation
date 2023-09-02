@@ -1,82 +1,205 @@
 body {
     margin: 0px;
-    padding-top: 20px;
+}
+
+#background {
+    background-image: url("images/title_img.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#header_container {
+    position: relative;
+    width: 0;
+    height: 0;
 }
 
 header {
+    margin: 0;
+    position: absolute;
+    bottom: calc(100vh - 550px);
+    left: 170px;
+    width: 430px;
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: white;
+}
+
+#deco1 {
+    width: 50px;
+    background-color: black;
+    height: 1px;
+}
+
+#company_name {
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 60px;
+    font-family: system-ui;
+    font-size: 12px;
     width: fit-content;
-    margin: auto;
 }
 
-.slide {
-    display: none;
+#site_title {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 23px;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
+#site_title h1 {
+    margin-bottom: 5px;
 }
 
-@keyframes fade {
-    from {opacity: 0.4;}
-    to {opacity: 1;}
+#site_title_subtext {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 17px;
+    font-weight: 200;
 }
 
-header h1 {
-    font-family: sans-serif;
-    width: 100%;
-    text-align: center;
+#org_info {
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 100px;
+    line-height: 1.5;
 }
 
-hr {
-    opacity: 0.5;
+#deco2 {
+    width: 50px;
+    background-color: black;
+    height: 1px;
 }
 
 section {
-    width: 1000px;
-    margin: auto;
-    font-family: sans-serif;
-    margin-top: 60px;
-    height: fit-content;
-    margin-bottom: 100px;
+    width: 100%;
+    font-family: system-ui;
+    height: 2000px;
+    margin: 0;
 }
 
-section h1 {
-    margin-left: 30px;
+#sidebar {
+    background-color: black;
+    width: calc(30% - 160px);
+    height: 100%;
+    float: left;
+    padding: 0px 80px 80px 80px;
+}
+
+#sticky_container {
+    position: sticky;
+    top: 0;
+    padding-top: 80px;
+}
+
+#sidebar h1 {
+    -webkit-text-fill-color: white;
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#sidebar p {
+    -webkit-text-fill-color: white;
+    font-family: system-ui;
+    font-size: 17px;
+    font-weight: 200;
+    margin: 40px 0px 40px 0;
 }
 
 form {
-    width: calc(100% - 60px);
-    background-color: rgb(243, 243, 243);
-    padding: 30px;
+    width: calc(70% - 400px);
+    padding: 200px;
+    float: left;
+}
+
+#form_title_container {
+    margin: 20px auto 20px auto;
+    height: 40px;
+    width: fit-content;
+}
+
+#deco3 {
+    width: 1px;
+    height: 40px;
+    background-color: black;
+    float: left;
+    margin-right: 10px;
+}
+
+#form_title {
+    float: left;
+    margin: 0;
+    font-family: system-ui;
+    font-size: 30px;
+}
+
+#deco4 {
+    width: 1px;
+    height: 40px;
+    background-color: black;
+    float: left;
+    margin-left: 10px;
+}
+
+.form_block {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: fit-content;
 }
 
 form h2 {
     margin-top: 50px;
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
+    font-family: system-ui;
+    font-weight: 300;
 }
 
 input {
     border-color: rgb(59, 180, 217);
     border-style: solid;
+    border-width: 2px;
     height: 40px;
     text-indent: 10px;
-    width: 100%;
+    padding: 0;
+}
+
+select {
+    border-color: rgb(59, 180, 217);
+    border-style: solid;
+    border-width: 2px;
+    height: 50px;
+    text-indent: 10px;
+    padding: 0;
 }
 
 button {
     width: 100%;
-    margin: auto;
-    margin-top: 50px;
-    height: 100px;
-    font-size: 30px;
-    -webkit-text-fill-color: white;
-    background-color: rgb(59, 180, 217);
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(89, 232, 89);
     border: none;
     cursor: pointer;
 }
 
 button:hover {
+    background-color: rgb(79, 202, 79);
+}
+
+#submit_button {
+    height: 100px;
+    font-size: 30px;
+    -webkit-text-fill-color: white;
+    background-color: rgb(59, 180, 217);
+}
+
+#submit_button:hover {
     background-color: rgb(29, 150, 187);
 }

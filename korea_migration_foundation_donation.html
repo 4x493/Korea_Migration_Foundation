@@ -8,68 +8,151 @@
     <title>Korea Migration Foundation Donation</title>
 </head>
 <body>
-    <header>
-        <img src="images/logo.gif">
+    <div id="background"></div>
 
-        <br>
-        <br>
+    <div id="header_container">
+        <header>
+            <div id="deco1"></div>
 
-        <div class="slide fade">
-            <img src="images/mv01.png" style="width:100%">
-        </div>
-        <div class="slide fade">
-            <img src="images/mv02.png" style="width:100%">
-        </div>
+            <div id="company_name">
+                <h1>한국 이주 노동 재단</h1>
+            </div>
 
-        <br>
+            <div id="site_title">
+                <h1>멤버쉽 가입 및 정기후원 신청서</h1>
+            </div>
 
-        <hr>
+            <div id="site_title_subtext">
+                <p>부디 적은 양이라도 괜찮으니 힘을 보태주세요. 여러 사람의 힘이 모이면 작은 힘도 커지는 법입니다.</p>
+            </div>
 
-        <h1>후원 신청서</h1>
+            <div id="org_info">
+                <p>
+                    (재)한국이주노동재단
+                    <br>
+                    (មូលនិធិ) Korea Migration Foundation
+                    <br>
+                    연락처 : 031-797-2688
+                </p>
+            </div>
 
-        <hr>
-    </header>
+            <div id="deco2"></div>
+        </header>
+    </div>
 
     <section>
-        <h1>| 후원 정보 |</h1>
+        <div id="sidebar">
+            <div id="sticky_container">
+                <h1>연락처</h1>
+
+                <p>경기도 광주시 경안동 33-32</p>
+                <p>
+                    TEL : 031-797-2688
+                    <br>
+                    FAX : 031-797-3940
+                </p>
+                <p>
+                    nhv4825@yahoo.co.kr
+                    <br>
+                    대표자 : 안대환
+                </p>
+            </div>
+        </div>
 
         <form action="https://formsubmit.co/KoreaMigrationFoundation@gmail.com" method="POST">
-            <h2>이름</h2>
-            <input type="name" name="이름" placeholder="이름을 입력해주세요">
+            <div id="form_title_container">
+                <div id="deco3"></div>
+                <h1 id="form_title">회원 정보</h1>
+                <div id="deco4"></div>
+            </div>
+
+            <div class="form_block">
+                <h2>회원명 (ឈ្មោះសមាជិក)</h2>
+                <input name="이름" placeholder="이름을 입력해주세요" style="width: calc(100% - 4px);">
+            </div>
+
+            <div class="form_block">
+                <h2>휴대전화 (ទូរស័ព្ទចល័ត)</h2>
+                <input name="전화번호" style="width: calc(20% - 4px - 40px); margin-right: 60px;">
+                <input name="전화번호" style="width: calc(40% - 4px - 40px); margin-right: 51px;">
+                <input name="전화번호" style="width: calc(40% - 4px - 40px);">
+            </div>
+
+            <div class="form_block">
+                <h2>생년월일 (ថ្ងៃខែឆ្នាំកំណើត)</h2>
+                <input name="생년" placeholder="년도" style="width: calc(25% - 4px - 30px); margin-right: 45px;">
+                <input name="생월" placeholder="월" style="width: calc(50% - 4px - 30px); margin-right: 36px;">
+                <input name="생일" placeholder="일" style="width: calc(25% - 4px - 30px);">
+            </div>
+
+            <div class="form_block">
+                <h2>납부유형 (ប្រភេទនៃការបង់ប្រាក់)</h2>
+                <input name="납부유형" placeholder="후원금 (ការបរិច្ចាគ)" style="width: calc(100% - 4px);">
+            </div>
+
+            <div class="form_block">
+                <h2>결제정보</h2>
+                <button>정기결제 (ការទូទាត់ទៀងទាត់)</button>
+            </div>
+
+            <div class="form_block">
+                <h2>결제수단</h2>
+                <button>자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ)</button>
+            </div>
+
+            <div class="form_block">
+                <h2>은행 (មោះធនាគារ)</h2>
+                <select name="bank" style="width: 100%;">
+                    <option value="KEB하나은행">KEB하나은행</option>
+                    <option value="SC제일은행">SC제일은행</option>
+                    <option value="국민은행">국민은행</option>
+                    <option value="신한은행">신한은행</option>
+                    <option value="외환은행">외환은행</option>
+                    <option value="우리은행">우리은행</option>
+                    <option value="한국시티은행">한국시티은행</option>
+                    <option value="경남은행">경남은행</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div class="form_block">
+                <h2>예금주명 (ម្ចាស់គណនី)</h2>
+                <input style="width: calc(100% - 4px);">
+            </div>
+
+            <div class="form_block">
+                <h2>계좌번호 (លេខគណនី)</h2>
+                <input style="width: calc(100% - 4px);">
+            </div>
+
+            <div class="form_block">
+                <h2>결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ) </h2>
+            </div>
+
+            <div class="form_block">
+                <h2>결제금액 (ចំនួនទឹកប្រាក់នៃការទូទាត់)</h2>
+            </div>
 
             <br>
             <br>
             <br>
-
-            <h2>전화번호</h2>
-            <input type="phone_number" name="전화번호" placeholder="'-' 없이 입력해주세요">
-
-            <br>
             <br>
 
-            <h2>주민등록번호 (기부금 영수증)</h2>
-            <input type="resident_registration_number" name="주민등록번호" placeholder="'-' 없이 입력해주세요">
-
-            <h2>이메일</h2>
-            <input type="email" name="이메일" placeholder="@example.com을 붙여주세요">
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h2>결제금액</h2>
-            <input type="donation_amount" name="후원금액" placeholder="단위는 KRW '원' 입니다. '원'은 입력하지 말아주세요.">
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <button type="submit">신청하기</button>
+            <div class="form_block">
+                <button id="submit_button" type="submit">신청하기</button>
+            </div>
         </form>
     </section>
+
     <script src="korea_migration_foundation_donation_script.js"></script>
 </body>
 </html>
