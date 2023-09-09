@@ -118,11 +118,12 @@ $("#custom_payment_amount").siblings(".keep_pressed").on("click", function(){
 
 $("#reset_button").on("click", function(){
     $(".keep_pressed").removeClass("active");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, canvas.width, canvas.height);
     $("form")[0].reset();
 });
 
 
 $("#submit_button").on("click", function(){
     $("#name").setAttribute("name", "이");
+    $("form").submit();
 });
