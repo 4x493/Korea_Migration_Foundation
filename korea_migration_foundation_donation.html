@@ -41,7 +41,7 @@
     </div>
 
     <section>
-        <div id="sidebar">
+        <div class="sidebar">
             <div id="sticky_container">
                 <h1>연락처</h1>
 
@@ -74,16 +74,16 @@
 
             <div class="form_block">
                 <h2>휴대전화 (ទូរស័ព្ទចល័ត)</h2>
-                <input name="전화번호" style="width: calc(20% - 4px - 40px); margin-right: 60px;">
-                <input name="전화번호" style="width: calc(40% - 4px - 40px); margin-right: 51px;">
-                <input name="전화번호" style="width: calc(40% - 4px - 40px);">
+                <input name="전화번호" style="width: calc(28% - 4px - 10%); margin-right: calc(10% - 4.5px);">
+                <input name="전화번호" style="width: calc(36% - 4px - 5%); margin-right: calc(10% - 4.5px);">
+                <input name="전화번호" style="width: calc(36% - 4px - 5%);">
             </div>
 
             <div class="form_block">
                 <h2>생년월일 (ថ្ងៃខែឆ្នាំកំណើត)</h2>
-                <input name="생년" placeholder="년도" style="width: calc(25% - 4px - 30px); margin-right: 45px;">
-                <input name="생월" placeholder="월" style="width: calc(50% - 4px - 30px); margin-right: 36px;">
-                <input name="생일" placeholder="일" style="width: calc(25% - 4px - 30px);">
+                <input name="생년" placeholder="년도" style="width: calc(30% - 4px - 5%); margin-right: calc(10% - 4.5px);">
+                <input name="생월" placeholder="월" style="width: calc(40% - 4px - 10%); margin-right: calc(10% - 4.5px);">
+                <input name="생일" placeholder="일" style="width: calc(30% - 4px - 5%);">
             </div>
 
             <div class="form_block">
@@ -93,12 +93,54 @@
 
             <div class="form_block">
                 <h2>결제정보</h2>
-                <button>정기결제 (ការទូទាត់ទៀងទាត់)</button>
+                <button type="button" class="keep_pressed">일회성 결제 (ការទូទាត់តែម្តង)</button>
+                <br>
+                <br>
+                <button type="button" class="keep_pressed">정기결제 (ការទូទាត់ទៀងទាត់)</button>
+            </div>
+
+            <div class="form_block">
+                <h2 style="margin-bottom: 0;">결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ)</h2>
+                <p style="margin-top: 0; font-weight: 100; font-family: system-ui;">*정기 결제 선택시</p>
+                <select name="payment_date" style="width: 100%;">
+                    <option value="none" selected disabled hidden class="select_default_option">날짜를 선택해주세요</option>
+                    <option value="1일">1일</option>
+                    <option value="2일">2일</option>
+                    <option value="3일">3일</option>
+                    <option value="4일">4일</option>
+                    <option value="5일">5일</option>
+                    <option value="6일">6일</option>
+                    <option value="7일">7일</option>
+                    <option value="8일">8일</option>
+                    <option value="9일">9일</option>
+                    <option value="10일">10일</option>
+                    <option value="11일">11일</option>
+                    <option value="12일">12일</option>
+                    <option value="13일">13일</option>
+                    <option value="14일">14일</option>
+                    <option value="15일">15일</option>
+                    <option value="16일">16일</option>
+                    <option value="17일">17일</option>
+                    <option value="18일">18일</option>
+                    <option value="19일">19일</option>
+                    <option value="20일">20일</option>
+                    <option value="21일">21일</option>
+                    <option value="22일">22일</option>
+                    <option value="23일">23일</option>
+                    <option value="24일">24일</option>
+                    <option value="25일">25일</option>
+                    <option value="26일">26일</option>
+                    <option value="27일">27일</option>
+                    <option value="28일">28일</option>
+                    <option value="29일">29일</option>
+                    <option value="30일">30일</option>
+                    <option value="31일">31일</option>
+                </select>
             </div>
 
             <div class="form_block">
                 <h2>결제수단</h2>
-                <button>자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ)</button>
+                <button type="button" class="keep_pressed">자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ)</button>
             </div>
 
             <div class="form_block">
@@ -137,50 +179,12 @@
             </div>
 
             <div class="form_block">
-                <h2>결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ)</h2>
-                <select name="payment_date" style="width: 100%;">
-                    <option value="none" selected disabled hidden>날짜를 선택해주세요</option>
-                    <option value="1일">1일</option>
-                    <option value="2일">2일</option>
-                    <option value="3일">3일</option>
-                    <option value="4일">4일</option>
-                    <option value="5일">5일</option>
-                    <option value="6일">6일</option>
-                    <option value="7일">7일</option>
-                    <option value="8일">8일</option>
-                    <option value="9일">9일</option>
-                    <option value="10일">10일</option>
-                    <option value="11일">11일</option>
-                    <option value="12일">12일</option>
-                    <option value="13일">13일</option>
-                    <option value="14일">14일</option>
-                    <option value="15일">15일</option>
-                    <option value="16일">16일</option>
-                    <option value="17일">17일</option>
-                    <option value="18일">18일</option>
-                    <option value="19일">19일</option>
-                    <option value="20일">20일</option>
-                    <option value="21일">21일</option>
-                    <option value="22일">22일</option>
-                    <option value="23일">23일</option>
-                    <option value="24일">24일</option>
-                    <option value="25일">25일</option>
-                    <option value="26일">26일</option>
-                    <option value="27일">27일</option>
-                    <option value="28일">28일</option>
-                    <option value="29일">29일</option>
-                    <option value="30일">30일</option>
-                    <option value="31일">31일</option>
-                </select>
-            </div>
-
-            <div class="form_block">
                 <h2>결제금액 (ចំនួនទឹកប្រាក់នៃការទូទាត់)</h2>
-                <button style="width: calc(33% - 50px); margin-right: 71px;">2000원</button>
-                <button style="width: calc(34% - 50px); margin-right: 70px;">10,000원</button>
-                <button style="width: calc(33% - 50px);">50,000원</button>
+                <button type="button" class="keep_pressed" style="width: calc(33% - 5%); margin-right: calc(7.5% - 5px);">2000원</button>
+                <button type="button" class="keep_pressed" style="width: calc(34% - 5%); margin-right: calc(7.5% - 5px);">10,000원</button>
+                <button type="button" class="keep_pressed" style="width: calc(33% - 5%);">50,000원</button>
 
-                <input name="결제금액" placeholder="기타 금액 (원)" style="width: calc(100% - 4px); margin-top: 20px; border-color: rgb(89, 232, 89);">
+                <input id="custom_payment_amount" name="결제금액" placeholder="기타 금액 (원)" style="width: calc(100% - 4px); margin-top: 20px; border-color: rgb(89, 232, 89);">
             </div>
 
             <div class="form_block">
@@ -196,14 +200,14 @@
             <div class="form_block">
                 <h2>전자서명 (ហត្ថលេខាអេឡិចត្រូនិច)</h2>
                 <div id="drawing_area_container">
-                    <div id="toolbar">
-                        <button id="clear">지우기</button>
-                    </div>
                     <div class="drawing_board">
                         <canvas id="drawing_board"></canvas>
                     </div>
+                    <div id="toolbar">
+                        <button type="button" id="clear">지우기</button>
+                    </div>
                 </div>
-                <p style="font-weight: bold;">한국이주노동재단의 전자동의(전자서명)서비스입니다.(전자금융거래법시행)</p>
+                <p style="font-weight: bold;">한국이주노동재단의 전자동의(전자서명) 서비스입니다.(전자금융거래법시행)</p>
             </div>
 
             <br>
@@ -213,7 +217,7 @@
 
             <div class="form_block">
                 <button id="submit_button" type="submit">신청하기</button>
-                <button id="reset_button" type="reset">다시 작성하기</button>
+                <button id="reset_button" type="button">다시 작성하기</button>
             </div>
         </form>
     </section>
