@@ -184,7 +184,7 @@ $("#submit_button").on("click", function(){
     $("form").append("<input name='생년월일' style='display: none;' value='" + birth_year + "년 " + birth_month + "월 " + birth_day + "일'>");
     $("form").append("<input name='납부유형' style='display: none;' value='" + payment_type + "'>");
     $("form").append("<input name='결제정보' style='display: none;' value='" + payment_info + "'>");
-    if(payment_info == "periodic_payment"){ $("form").append("<input name='정기 결제일' style='display: none;' value='" + payment_date + "'>"); };
+    if(payment_info == "정기결제"){ $("form").append("<input name='정기 결제일' style='display: none;' value='" + payment_date + "'>"); };
     $("form").append("<input name='결제수단' style='display: none;' value='" + payment_method + "'>");
     $("form").append("<input name='은행' style='display: none;' value='" + bank + "'>");
     $("form").append("<input name='예금주명' style='display: none;' value='" + account_owner + "'>");
