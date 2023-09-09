@@ -121,3 +121,8 @@ $("#reset_button").on("click", function(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     $("form")[0].reset();
 });
+
+
+$("#submit_button").on("click", function(){
+    $("#name").setAttribute("name", 이름);
+});
