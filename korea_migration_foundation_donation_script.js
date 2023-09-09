@@ -125,5 +125,4 @@ $("#reset_button").on("click", function(){
 
 $("#submit_button").on("click", function(){
     $("#name").setAttribute("name", "이");
-    $("form").submit();
 });
