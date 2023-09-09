@@ -76,7 +76,7 @@
 
             <div class="form_block">
                 <h2>회원명 (ឈ្មោះសមាជិក)</h2>
-                <input name="이름" placeholder="이름을 입력해주세요" style="width: calc(100% - 4px);">
+                <input name="name" placeholder="이름을 입력해주세요" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
@@ -88,28 +88,28 @@
 
             <div class="form_block">
                 <h2>생년월일 (ថ្ងៃខែឆ្នាំកំណើត)</h2>
-                <input name="brith_year" placeholder="년도" style="width: calc(30% - 4px - 5%); margin-right: calc(10% - 4.5px);">
+                <input name="birth_year" placeholder="년도" style="width: calc(30% - 4px - 5%); margin-right: calc(10% - 4.5px);">
                 <input name="birth_month" placeholder="월" style="width: calc(40% - 4px - 10%); margin-right: calc(10% - 4.5px);">
                 <input name="birth_day" placeholder="일" style="width: calc(30% - 4px - 5%);">
             </div>
 
             <div class="form_block">
                 <h2>납부유형 (ប្រភេទនៃការបង់ប្រាក់)</h2>
-                <input name="납부유형" placeholder="후원금 (ការបរិច្ចាគ)" style="width: calc(100% - 4px);">
+                <input name="payment_type" placeholder="후원금 (ការបរិច្ចាគ)" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
                 <h2>결제정보</h2>
-                <button type="button" class="keep_pressed">일회성 결제 (ការទូទាត់តែម្តង)</button>
+                <button id="one_time_payment" type="button" class="keep_pressed">일회성 결제 (ការទូទាត់តែម្តង)</button>
                 <br>
                 <br>
-                <button type="button" class="keep_pressed">정기결제 (ការទូទាត់ទៀងទាត់)</button>
+                <button id="periodic_payment" type="button" class="keep_pressed">정기결제 (ការទូទាត់ទៀងទាត់)</button>
             </div>
 
             <div class="form_block">
                 <h2 style="margin-bottom: 0;">결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ)</h2>
                 <p style="margin-top: 0; font-weight: 100; font-family: system-ui;">*정기 결제 선택시</p>
-                <select name="payment_date" style="width: 100%;">
+                <select id="payment_date" style="width: 100%;">
                     <option value="none" selected disabled hidden class="select_default_option">날짜를 선택해주세요</option>
                     <option value="1일">1일</option>
                     <option value="2일">2일</option>
@@ -147,12 +147,12 @@
 
             <div class="form_block">
                 <h2>결제수단</h2>
-                <button type="button" class="keep_pressed">자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ)</button>
+                <button id="payment_method" type="button" class="keep_pressed">자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ)</button>
             </div>
 
             <div class="form_block">
                 <h2>은행 (មោះធនាគារ)</h2>
-                <select name="bank" style="width: 100%;">
+                <select id="bank" style="width: 100%;">
                     <option value="none" selected disabled hidden>은행을 선택해주세요</option>
                     <option value="KEB하나은행">KEB하나은행</option>
                     <option value="SC제일은행">SC제일은행</option>
@@ -177,29 +177,29 @@
 
             <div class="form_block">
                 <h2>예금주명 (ម្ចាស់គណនី)</h2>
-                <input style="width: calc(100% - 4px);">
+                <input name="account_owner" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
                 <h2>계좌번호 (លេខគណនី)</h2>
-                <input style="width: calc(100% - 4px);">
+                <input name="account_num" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
                 <h2>결제금액 (ចំនួនទឹកប្រាក់នៃការទូទាត់)</h2>
-                <button type="button" class="keep_pressed" style="width: calc(33% - 5%); margin-right: calc(7.5% - 5px);">2000원</button>
-                <button type="button" class="keep_pressed" style="width: calc(34% - 5%); margin-right: calc(7.5% - 5px);">10,000원</button>
-                <button type="button" class="keep_pressed" style="width: calc(33% - 5%);">50,000원</button>
+                <button id="2k_won" type="button" class="keep_pressed" style="width: calc(33% - 5%); margin-right: calc(7.5% - 5px);">2000원</button>
+                <button id="10k_won" type="button" class="keep_pressed" style="width: calc(34% - 5%); margin-right: calc(7.5% - 5px);">10,000원</button>
+                <button id="50k_won" type="button" class="keep_pressed" style="width: calc(33% - 5%);">50,000원</button>
 
-                <input id="custom_payment_amount" name="결제금액" placeholder="기타 금액 (원)" style="width: calc(100% - 4px); margin-top: 20px; border-color: rgb(89, 232, 89);">
+                <input name="custom_won" placeholder="기타 금액 (원)" style="width: calc(100% - 4px); margin-top: 20px; border-color: rgb(89, 232, 89);">
             </div>
 
             <div class="form_block">
                 <h2 style="margin-bottom: 0;">결제동의정보 (ត៌មានកិច្ចព្រមព្រៀងការទូទាត់)</h2>
-                <input type="checkbox" id="agreement1" name="결제동의정보1" value="결제동의정보1">
+                <input type="checkbox" id="agreement1" value="결제동의정보1">
                 <label for="agreement1"> 개인정보수집 및 이용,제공,위탁 에 동의 / ការយល់ព្រមចំពោះការប្រមូលព័ត៌មានផ្ទាល់ខ្លួន ការប្រើប្រាស់ ការផ្តល់ ការដឹកជញ្ជូន។ល។</label>
                 <br>
-                <input type="checkbox" id="agreement2" name="결제동의정보2" value="결제동의정보2">
+                <input type="checkbox" id="agreement2" value="결제동의정보2">
                 <label for="agreement2"> 신청내역을 확인 및 매월 자동 결제에 동의 / បញ្ជាក់ព័ត៌មានលម្អិតអំពីកម្មវិធី និងយល់ព្រមលើការទូទាត់ប្រចាំខែដោយស្វ័យប្រវត្តិ</label>
                 <br>
             </div>
