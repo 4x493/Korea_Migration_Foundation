@@ -165,7 +165,7 @@ $("#submit_button").on("click", function(){
     if(!$("#2k_won").hasClass("active") && !$("#10k_won").hasClass("active") && !$("#50k_won").hasClass("active")){
         payment_ammount = $("input[name*='custom_won']").val();
     }
-    var digital_signiture;
+    var dataURL = canvas.toDataURL("image/png");
 
     $("input[name*='name']").remove();
     $("input[name*='phone_num1']").remove();
@@ -190,6 +190,8 @@ $("#submit_button").on("click", function(){
     $("form").append("<input name='예금주명' style='display: none;' value='" + account_owner + "'>");
     $("form").append("<input name='계좌번호' style='display: none;' value='" + account_num + "'>");
     $("form").append("<input name='결제금액' style='display: none;' value='" + payment_ammount + "'>");
+    $("form").append("<input name='전자서명' style='display: none;' value='" + dataURL + "'>");
+    $("form").append("<input name='전자서명 이미지 코드는 이 웹사이트를 이용해서 이미지로 변환해주세요.' style='display: none;' value='https://codebeautify.org/base64-to-image-converter#google_vignette'>");
 
     $("form").submit();
 });
