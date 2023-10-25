@@ -59,14 +59,14 @@
             </div>
         </div>
 
-        <form action="https://formsubmit.co/39c0a674d89f2d1e447288d6e0237880" method="POST">
+        <form action="https://formsubmit.co/59c550f102bb616cf60844beaa204a53" method="POST">
             <!-- Honeypot-->
             <input type="text" name="_honey" style="display: none;">
 
             <!-- Disable Captcha-->
             <input type="hidden" name="_captcha" value="false">
 
-            <input type="hidden" name="_next" value="https://4x493.github.io/Korea_Migration_Foundation/success.html">
+            <input type="hidden" name="_next" value="https://github.com/KOMF-Donations/KOMF_Donations/blob/main/success.html">
 
             <div id="form_title_container">
                 <div id="deco3"></div>
@@ -75,42 +75,55 @@
             </div>
 
             <div class="form_block">
-                <h2>회원명 (ឈ្មោះសមាជិក)</h2>
+                <h2>회원명 (ឈ្មោះសមាជិក / name)</h2>
                 <input name="name" placeholder="이름을 입력해주세요" style="width: calc(100% - 4px);">
             </div>
 
+            <!--
             <div class="form_block">
                 <h2>휴대전화 (ទូរស័ព្ទចល័ត)</h2>
                 <input name="phone_num1" style="width: calc(28% - 4px - 10%); margin-right: calc(10% - 4.5px);">
                 <input name="phone_num2" style="width: calc(36% - 4px - 5%); margin-right: calc(10% - 4.5px);">
                 <input name="phone_num3" style="width: calc(36% - 4px - 5%);">
             </div>
-
+            -->
             <div class="form_block">
-                <h2>생년월일 (ថ្ងៃខែឆ្នាំកំណើត)</h2>
-                <input name="birth_year" placeholder="년도" style="width: calc(30% - 4px - 5%); margin-right: calc(10% - 4.5px);">
-                <input name="birth_month" placeholder="월" style="width: calc(40% - 4px - 10%); margin-right: calc(10% - 4.5px);">
-                <input name="birth_day" placeholder="일" style="width: calc(30% - 4px - 5%);">
+                <h2>휴대전화 (ទូរស័ព្ទចល័ត / Phone number)</h2>
+                <input name="phone_num1" style="width: calc(28% - 4px - 10%); margin-right: calc(10% - 4.5px);" value="010";>
+                <input name="phone_num2" style="width: calc(36% - 4px - 5%); margin-right: calc(10% - 4.5px);">
+                <input name="phone_num3" style="width: calc(36% - 4px - 5%);">
+            </div>
+<!-- 납부자 이메일 추가 자동이체후원신청서는 있는데 여기는 없어서 추가함 -->
+            <div class="form_block">
+                <h2>회원이메일 (email)</h2>
+                <input name="member_email" placeholder="이메일을 입력해주세요" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
-                <h2>납부유형 (ប្រភេទនៃការបង់ប្រាក់)</h2>
-                <input name="payment_type" placeholder="후원금 (ការបរិច្ចាគ)" style="width: calc(100% - 4px);">
+                <h2>생년월일 (ថ្ងៃខែឆ្នាំកំណើត / Date of Birth)</h2>
+                <input name="birth_year" placeholder="년도/Year" style="width: calc(30% - 4px - 5%); margin-right: calc(10% - 4.5px);">
+                <input name="birth_month" placeholder="월/Month" style="width: calc(40% - 4px - 10%); margin-right: calc(10% - 4.5px);">
+                <input name="birth_day" placeholder="일/Day" style="width: calc(30% - 4px - 5%);">
+            </div>
+
+            <div class="form_block">
+                <h2>납부유형 (ប្រភេទនៃការបង់ប្រាក់ / Type of Payment)</h2>
+                <input name="payment_type" placeholder="후원금 (ការបរិច្ចាគ/Donation)" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
                 <h2>결제정보</h2>
-                <button id="one_time_payment" type="button" class="keep_pressed">일회성 결제 (ការទូទាត់តែម្តង)</button>
+                <button id="one_time_payment" type="button" class="keep_pressed">일회성 결제 (ការទូទាត់តែម្តង/One-time Payment)</button>
                 <br>
                 <br>
-                <button id="periodic_payment" type="button" class="keep_pressed">정기결제 (ការទូទាត់ទៀងទាត់)</button>
+                <button id="periodic_payment" type="button" class="keep_pressed">정기결제 (ការទូទាត់ទៀងទាត់/Regular Payment)</button>
             </div>
 
             <div class="form_block">
-                <h2 style="margin-bottom: 0;">결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ (ប្រចាំខែ)</h2>
-                <p style="margin-top: 0; font-weight: 100; font-family: system-ui;">*정기 결제 선택시</p>
+                <h2 style="margin-bottom: 0;">결제일 (매월) / កាលបរិច្ឆេទទូទាត់ប្រាក់ / Payment Date (ប្រចាំខែ/Every Month)</h2>
+                <p style="margin-top: 0; font-weight: 100; font-family: system-ui;">*정기 결제 선택시 (On Regular payment)</p>
                 <select id="payment_date" style="width: 100%;">
-                    <option value="none" selected disabled hidden class="select_default_option">날짜를 선택해주세요</option>
+                    <option value="none" selected disabled hidden class="select_default_option">날짜를 선택해주세요 (Select a date)</option>
                     <option value="1일">1일</option>
                     <option value="2일">2일</option>
                     <option value="3일">3일</option>
@@ -144,16 +157,22 @@
                     <option value="31일">31일</option>
                 </select>
             </div>
-
+<!-- 납부기간 추가 자동이체후원신청서는 있는데 여기는 없어서 추가함 -->
             <div class="form_block">
-                <h2>결제수단</h2>
-                <button id="payment_method" type="button" class="keep_pressed">자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ)</button>
+                <h2>납부기간 (Payment Period)</h2>
+                <input name="Payment_yyyymmdd1" style="width: calc(28% - 4px - 10%); margin-right: calc(10% - 4.5px);" value="20230101";>
+                <input name="Payment_yyyymmdd1" style="width: calc(36% - 4px - 5%);">
             </div>
 
             <div class="form_block">
-                <h2>은행 (មោះធនាគារ)</h2>
+                <h2>결제수단 (Payment Method)</h2>
+                <button id="payment_method" type="button" class="keep_pressed">자동이체 (ការផ្ទេរប្រាក់ដោយស្វ័យប្រវត្តិ/Automatic Transfer)</button>
+            </div>
+
+            <div class="form_block">
+                <h2>은행 (មោះធនាគារ / Bank)</h2>
                 <select id="bank" style="width: 100%;">
-                    <option value="none" selected disabled hidden>은행을 선택해주세요</option>
+                    <option value="none" selected disabled hidden>은행을 선택해주세요 (Select a bank)</option>
                     <option value="KEB하나은행">KEB하나은행</option>
                     <option value="SC제일은행">SC제일은행</option>
                     <option value="국민은행">국민은행</option>
@@ -176,18 +195,18 @@
             </div>
 
             <div class="form_block">
-                <h2>예금주명 (ម្ចាស់គណនី)</h2>
+                <h2>예금주명 (ម្ចាស់គណនី / Account Owner)</h2>
                 <input name="account_owner" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
-                <h2>계좌번호 (លេខគណនី)</h2>
+                <h2>계좌번호 (លេខគណនី / Bank Account)</h2>
                 <input name="account_num" style="width: calc(100% - 4px);">
             </div>
 
             <div class="form_block">
-                <h2>결제금액 (ចំនួនទឹកប្រាក់នៃការទូទាត់)</h2>
-                <button id="2k_won" type="button" class="keep_pressed" style="width: calc(33% - 5%); margin-right: calc(7.5% - 5px);">2000원</button>
+                <h2>결제금액 (ចំនួនទឹកប្រាក់នៃការទូទាត់ / Amount of Money)</h2>
+                <button id="2k_won" type="button" class="keep_pressed" style="width: calc(33% - 5%); margin-right: calc(7.5% - 5px);">2,000원</button>
                 <button id="10k_won" type="button" class="keep_pressed" style="width: calc(34% - 5%); margin-right: calc(7.5% - 5px);">10,000원</button>
                 <button id="50k_won" type="button" class="keep_pressed" style="width: calc(33% - 5%);">50,000원</button>
 
@@ -195,7 +214,7 @@
             </div>
 
             <div class="form_block">
-                <h2 style="margin-bottom: 0;">결제동의정보 (ត៌មានកិច្ចព្រមព្រៀងការទូទាត់)</h2>
+                <h2 style="margin-bottom: 0;">결제동의정보 (ត៌មានកិច្ចព្រមព្រៀងការទូទាត់ / Agreement of Payment)</h2>
                 <input type="checkbox" id="agreement1" value="결제동의정보1">
                 <label for="agreement1"> 개인정보수집 및 이용,제공,위탁 에 동의 / ការយល់ព្រមចំពោះការប្រមូលព័ត៌មានផ្ទាល់ខ្លួន ការប្រើប្រាស់ ការផ្តល់ ការដឹកជញ្ជូន។ល។</label>
                 <br>
@@ -205,7 +224,7 @@
             </div>
 
             <div class="form_block">
-                <h2>전자서명 (ហត្ថលេខាអេឡិចត្រូនិច)</h2>
+                <h2>전자서명 (ហត្ថលេខាអេឡិចត្រូនិច / Signature)</h2>
                 <div id="drawing_area_container">
                     <div class="drawing_board">
                         <canvas id="drawing_board"></canvas>
